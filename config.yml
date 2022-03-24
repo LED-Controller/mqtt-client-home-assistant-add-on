@@ -1,0 +1,30 @@
+name: "ledcon connect"
+description: "Connect the LED-CON solution to an mqtt-brocker"
+version: "1.0.0"
+slug: "ledcon_connect"
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+opions:
+  backend_ip: "host.docker.internal"
+  backend_port: 8080
+  backend_password: ""
+  mqtt_ip: "host.docker.internal"
+  mqtt_port: 1883
+  mqtt_user: ""
+  mqtt_password: ""
+  mqtt_topic: "homeassistant/light/"
+  mqtt_keepalive: 0 
+schema:
+  backend_ip: "str?"
+  backend_port: "int?"
+  backend_password: "str"
+  mqtt_ip: "str"
+  mqtt_port: "int?"
+  mqtt_user: "str"
+  mqtt_password: "str"
+  mqtt_topic: "str?"
+  mqtt_keepalive: "int?"
