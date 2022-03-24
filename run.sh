@@ -39,4 +39,4 @@ fi
 
 echo "Starting mqtt-client"
 
-python3 main.py
+python3 src/main.py

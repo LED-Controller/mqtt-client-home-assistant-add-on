@@ -15,7 +15,7 @@ RUN pip3 install paho-mqtt==1.6.1
 RUN pip3 install requests==2.27.1
 
 COPY run.sh /
-COPY main.py /
+COPY src src
 
 RUN chmod a+x /run.sh
 
